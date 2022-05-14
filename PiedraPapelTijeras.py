@@ -6,10 +6,8 @@ def jugar():
     print("¡Bienvenido a Piedra, Papel o Tijera!")
     #SOLICITUD DE RONDAS
     r = int(input("Dime, al mejor de cuantas rondas quieres jugar (minimo 3)\n"))
-    if r < 3:
+    while r < 3:
         r = int(input("El minimo es 3, vuelve a ingresar el numero de rondas\n"))
-    else:
-        continue
     
     puntaje_cpu = 0
     puntaje_jugador = 0
